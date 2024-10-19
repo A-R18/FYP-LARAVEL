@@ -1,0 +1,320 @@
+/* Reset default padding, margin, and box-sizing for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    /* Ensure the font is applied correctly */
+}
+
+body {
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+/* Full viewport height and width background section */
+.prt {
+    height: 100vh;
+    /* Full viewport height */
+    width: 100%;
+    /* Full width without causing overflow */
+    position: relative;
+    /* Ensure positioning context for children */
+
+    /* Multiple background images */
+    background: url('homepage (1).jpg') no-repeat left center,
+        url('homepage (2).jpg') no-repeat center center,
+        url('homepage (3).jpg') no-repeat right center;
+
+    /* Background properties */
+    background-size: 33.33% 100%, 33.33% 100%, 33.33% 100%;
+    background-color: rgba(0, 0, 0, 0.637);
+    /* Each image covers one-third of the width */
+    background-blend-mode: multiply;
+    /* Blend images with background color */
+
+    filter: blur(16px);
+    /* Blur effect on the background images */
+
+    /* Added to make the background image static */
+    background-attachment: fixed;
+}
+
+/* Styling for the main content container */
+.mn {
+    position: absolute;
+    /* Position relative to .prt */
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Offset by half of its own width and height */
+    z-index: 5;
+    /* Ensure it is above other content */
+
+    color: white;
+    /* Text color */
+
+    width: 100%;
+    /* Full width without causing overflow */
+    min-width: 250px;
+    /* Minimum width */
+    height: 100vh;
+    /* Full viewport height */
+    border-radius: 15px;
+    /* Rounded corners */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+
+
+
+li {
+    font-size: 20px;
+    margin: 0 auto;
+    /* background-color: red; */    
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+   margin: 0 auto;
+   border-radius: 15px;
+}
+
+
+.guide-img{
+    margin:10px auto;
+
+    height: 500px;
+    width: 60%;
+    
+}
+
+span{
+    color: rgb(255, 0, 21);
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.mn_Ad {
+    
+    margin: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 80px;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(153, 209, 235);
+    font-weight: bolder;
+}
+
+.mn_pra {
+    background-color: aquamarine;
+    margin: 0px auto;
+    width: 98vw;
+    /* Adjusted width to prevent overflow */
+    height: 280px;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(153, 209, 235);
+    font-weight: bolder;
+}
+
+
+.md {
+    margin: 10px auto;
+   
+    height: 100%;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+/* Styling for the video container */
+.mmdch {
+   
+    width: 100%;
+    filter: none;
+    /* Ensure video container has no blur filter */
+}
+
+
+
+
+/* Additional styling for text container to ensure no blur */
+.mdtxt {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    text-align: justify;
+    color: rgb(153, 209, 235);
+    font-weight: bolder;
+    width: 100%;
+    height: auto;
+
+}
+
+
+
+.hdng {
+    font-size: 20px;
+    font-weight: 600;
+    height: 40px;
+    width: auto;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.pra {
+    margin: 0px 4px;
+}
+
+
+p {
+    text-align: justify;
+}
+
+.ft {
+
+    
+    text-align: justify;
+    color: rgb(153, 209, 235);
+    font-weight: bolder;
+    margin: auto;
+    width: 98.5vw;
+    height: auto;
+    background-color: red;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+
+
+    .mn_Ad {
+        font-size: 30px;
+        height: 40px;
+    }
+
+    .md {
+        flex-direction: column;
+    }
+
+    
+.pra>li{
+    font-size: 15px;
+}
+
+    .guide-img{
+        margin:10px auto;
+    
+        height: 250px;
+        width: 100%;
+        
+    }
+
+
+    li {
+        font-size: 20px;
+        margin: 0 auto;
+        /* background-color: red; */    
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    img {
+        height: 100%;
+        width: 100%;
+       margin: 0 auto;
+       border-radius: 15px;
+    }
+    
+    
+   
+    .hdng {
+        margin-top: 35px;
+
+        font-size: 20px;
+    }
+
+    .mdch {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .mmdch {
+        /* background-color: red; */
+        width: 100%;
+        padding: 0;
+
+
+    }
+
+   
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 980px) {
+
+    .mn_Ad {
+        font-size: 30px;
+        height: 40px;
+    }
+
+    .md {
+        flex-direction: column;
+    }
+
+    .md>div {
+        width: 100%;
+
+    }
+
+    .hdng {
+        margin-top: 35px;
+
+        font-size: 20px;
+    }
+
+    .mdch {
+        width: 100%;
+        padding: 0;
+    }
+
+    .mmdch {
+        /* background-color: red; */
+        width: 100%;
+        padding: 0;
+
+
+    }
+
+
+    .guide-img{
+        margin:10px auto;
+    
+        height: 380px;
+        width: 100%;
+        
+    }
+
+
+   
+
+}

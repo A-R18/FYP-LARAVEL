@@ -1,0 +1,313 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu';
+
+}
+
+.prt {
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background: url(loginPic.jpg), rgba(0, 0, 0, 0.267);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    /* border: 4px solid black; */
+    filter: blur(10px);
+
+
+}
+
+.mn {
+    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    border: 5px solid rgb(128, 255, 217);
+    color: white;
+    background-color: rgba(4, 51, 51, 0.644);
+    width: 450px;
+    min-width: 250px;
+    height: 270px;
+    border-radius: 15px;
+
+}
+
+.ch {
+    height: 50px;
+    width: 200px;
+    display: grid;
+    grid-template-rows: 1fr;
+    margin: 30px 30px 0px 10px;
+
+}
+
+button {
+    margin-top: 70px;
+    height: 30px;
+    width: 80px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 7px;
+}
+
+button:hover {
+    font-weight: bolder;
+    border: 2px solid rgb(15, 0, 146);
+    color: rgb(4, 1, 192);
+    background-color: rgb(161, 210, 255);
+}
+
+a:hover {
+
+    font-weight: 500;
+    color: rgb(216, 17, 17);
+
+}
+
+a {
+
+    text-decoration: none;
+    font-size: 10px;
+    margin: 30px 0px 15px 15px;
+    font-weight: bolder;
+    color: white;
+
+}
+
+.lnk {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+
+    margin: 30px 0px 0px 0px;
+    padding: 0px 15px 0px 20px;
+    font-size: 14px;
+}
+
+.hl {
+    width: 125px;
+
+}
+
+input {
+    margin-top: 20px;
+    height: 50px;
+    width: 400px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(0, 165, 165, 0.836);
+    color: rgb(255, 255, 255);
+    padding: 0px 5px;
+
+
+
+}
+.hdng{
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* .input-img{
+    background: url('/Icons/eye.png') no-repeat left center;
+
+    /* "{{ asset('/css/adform.css') }}" */
+/* background-size: 15px 15px; Adjust size as needed */
+/* margin-right: 30px; Adjust to ensure text does not overlap the image */
+
+/* } */
+
+::placeholder {
+    color: rgb(255, 255, 255);
+    margin: 0px 0px 4px 4px;
+
+}
+
+label {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+
+span {
+    margin-top: 3px;
+    font-size: 7pt;
+    font-weight: bold;
+    color: red;
+
+
+}
+
+.lrt {
+    /* position:absolute; */
+    top: 0%;
+    left: 0%;
+    /* transform: translate(25%, 25%); */
+    z-index: 5;
+    margin: auto auto;
+    height: 60px;
+    width: 370px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    text-align: center;
+    align-content: center;
+    background-color: rgba(0, 255, 64, 0.521);
+    font-weight: bolder;
+    color: white;
+    animation: fadeOut 8s ease-out forwards;
+    /* Animation triggers automatically  */
+}
+
+.dgr {
+
+    top: 0%;
+    left: 0%;
+    /* transform: translate(-25%, -25%); */
+    z-index: 5;
+    margin: auto auto;
+    height: 60px;
+    width: 370px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    text-align: center;
+    align-content: center;
+    background-color: rgba(255, 0, 0, 0.493);
+    font-weight: bolder;
+    color: white;
+    animation: fadeOut 8s ease-out forwards;
+    /* Animation triggers automatically */
+
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.npr {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 90px;
+    width: 100vw;
+
+    display: flex;
+    justify-items: center;
+    align-content: center;
+}
+.lrt > p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    width: 350px;
+}
+
+
+
+
+@media only screen and (max-width:450px){
+
+
+    .mn {
+       
+        width: 220px;
+        
+        height: 270px;
+        border-radius: 15px;
+    
+    }
+    .mn > *{
+        font-size: 0.6em;
+        
+
+    }
+     label{
+        font-size: 12px;
+    }
+    
+    .ch {
+        height: 50px;
+        width: 180px;
+        display: grid;
+        grid-template-rows: 1fr;
+        margin: 30px 30px 0px 10px;
+    
+    }
+    
+    button {
+        margin-top: 70px;
+        height: 30px;
+        width: 50px;
+        border: none;
+        background-color: blue;
+        color: white;
+        border-radius: 7px;
+    }
+    
+    button:hover {
+        font-weight: bolder;
+        border: 2px solid rgb(15, 0, 146);
+        color: rgb(4, 1, 192);
+        background-color: rgb(161, 210, 255);
+    }
+    
+    a:hover {
+    
+        font-weight: 500;
+        color: rgb(216, 17, 17);
+    
+    }
+    
+    a {
+    
+        text-decoration: none;
+        font-size: 10px;
+        margin: 30px 0px 15px 15px;
+        font-weight: bolder;
+        color: white;
+    
+    }
+    
+  
+    
+    .hl {
+        width: 125px;
+       
+    
+    }
+    
+    input {
+        margin-top: 20px;
+        height: 50px;
+        width: 220px;
+        border: none;
+       
+    
+    
+    
+    }
+ 
+
+
+
+}

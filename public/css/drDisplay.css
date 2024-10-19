@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden; /* Prevent body from scrolling */
+}
+
+.prt {
+    height: 100vh;
+    width: 100%;
+    background: url(admdocPic.jpg) center center / cover no-repeat, rgba(0, 0, 0, 0.479);
+    background-blend-mode: multiply;
+    filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.mn {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    border: 5px solid rgb(148, 255, 223);
+    color: white;
+    background-color: rgba(7, 20, 20, 0.541);
+    margin: 25px auto 0 auto;
+    height: calc(100vh - 50px); /* Adjust height to account for the border */
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-y: auto; /* Enable vertical scrolling */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.mn::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+
+.mn::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.crd {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 360px;
+    width: 170px;
+    max-width: 170px; /* Ensure the width does not exceed 170px */
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: rgba(28, 6, 126, 0.308);
+}
+
+img {
+    height: 175px;
+    width: 155px;
+    border-radius: 10px;
+    margin: 6px auto;
+}
+
+.crd > * {
+    text-align: center;
+}
+
+button {
+    height: 30px;
+    width: 130px;
+    border: none;
+    background-color: rgb(4, 105, 92);
+    color: white;
+    border-radius: 7px;
+    margin: 8px auto;
+
+}
+
+button:hover {
+    font-weight: bolder;
+    border: 2px solid rgb(15, 0, 146);
+    color: rgb(4, 1, 192);
+    background-color: rgb(161, 210, 255);
+    cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Large screens */
+@media only screen and (min-width: 1366px) {
+    .mn {
+        width: 80vw;
+    }
+}
+
+/* Medium to large screens */
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    .mn {
+        width: 85vw;
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .mn {
+        width: 90vw;
+    }
+}
+
+/* Small to medium screens */
+@media only screen and (min-width: 630px) and (max-width: 767px) {
+    .mn {
+        width: 95vw;
+    }
+}
+
+/* Smartphones */
+@media only screen and (max-width: 629px) {
+    .mn {
+        width: 100vw;
+        height: 100vh; /* Ensure it takes the full viewport height */
+        flex-direction: column;
+        flex-wrap: nowrap;
+        border: none;
+        justify-content: flex-start; /* Align items at the top */
+        overflow-y: auto; /* Enable vertical scrolling */
+        height: calc(100vh - 20px); /* Adjust height to account for the border */
+    }
+
+    .crd {
+        margin: 20px auto; /* Center the card horizontally */
+        width: 170px; /* Ensure width remains 170px */
+        max-width: 170px; /* Ensure the width does not exceed 170px */
+        flex-shrink: 0; /* Prevent the card from shrinking */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensure space is distributed within the card */
+        height: auto; /* Allow height to adjust based on content */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        
+    }
+
+    button {
+        height: 35px;
+        width: 130px;
+        border: none;
+        background-color: rgb(4, 105, 92);
+        color: white;
+        border-radius: 7px;
+        margin: 8px auto; /* Center the button horizontally */
+        align-self: center; /* Center the button horizontally within the card */
+    }
+    .cditm {
+        margin-top: 10px;
+    }
+
+    
+}

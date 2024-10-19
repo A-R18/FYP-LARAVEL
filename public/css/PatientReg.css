@@ -1,0 +1,336 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu';
+
+}
+
+
+
+.prt {
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background: url(admdocPic.jpg), rgba(0, 0, 0, 0.171);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    filter: blur(8px);
+
+
+}
+
+
+.mn {
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    border: 5px solid rgb(26, 97, 76);
+    color: white;
+    background-color: rgba(7, 20, 20, 0.541);
+    margin: auto;
+    min-height: 59vh;
+    width: 85vw;
+
+
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 15px;
+}
+
+.ch {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    flex-direction: row;
+
+}
+.chb{
+    height: 30px;   
+    margin-top: 75px;
+    margin-left: 70%;  
+    
+}   
+
+.chl {
+    font-size: 20px;
+    font-weight: bolder;
+   
+}
+
+.chi {
+    /* background-color: rgb(184, 235, 255); */
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 8px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(4, 182, 182, 0.39);
+    color: white;
+    font-size: 15px;
+}
+input:hover{
+    border: 1px solid orangered;
+}
+
+textarea:hover{
+    border: 1px solid orangered;
+}
+
+
+
+span {
+    margin-top: 3px;
+    font-size: 7pt;
+    font-weight: bold;
+    color: red;
+    width: auto;
+
+}
+
+::placeholder {
+    color: rgb(255, 255, 255);
+
+}
+
+
+button {
+
+    height: 30px;
+    width: 80px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 7px;
+
+}
+
+button:hover {
+    font-weight: bolder;
+    border: 2px solid rgb(15, 0, 146);
+    color: rgb(4, 1, 192);
+    background-color: rgb(161, 210, 255);
+}
+
+.rbt {
+    background-color: orange;
+    width: 15px;
+    height: 15px;
+}
+
+.rdch {
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.addr {
+    margin: auto 8px;
+    grid-column: 1/ span 2;
+}
+
+
+
+.chrd {
+    width: 250px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+.rdbt {
+    width: 100px;
+}
+
+
+
+textarea {
+    margin-right: 11px;
+    border-radius: 8px;
+    background-color: rgba(4, 182, 182, 0.39);
+    color: white;
+    width: 650px;
+    padding-top: 18px;
+    padding-right: 12px;
+    padding-left: 12px;
+    text-align: justify;
+    font-size: 14px;
+
+}
+
+
+textarea::placeholder {
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+
+.msg {
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+@media only screen and (min-width:220px) and (max-width:939px) {
+
+    .mn {
+        height: 80vh;
+        width: 95vw;
+    }
+
+    form {
+        display: block;
+    }
+
+    textarea {
+        width: 200px;
+    }
+
+
+    .chl {
+        font-size: 0.7em;
+        margin: auto 0px;
+    }
+
+
+    .rdch>label{
+        margin-right: 20px;
+        font-size: 0.7em;
+    }
+
+    
+
+    input {
+        height: 40px;
+        width: 200px;
+    }
+
+    button {
+        height: 35px;
+        width: 90px;
+        margin-left: 70%;
+    }
+
+    .chi {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .chb{
+       
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        row-gap: 40px;
+    }
+
+
+    .chi > textarea {
+        margin-left: 65px;
+        width: 74%;
+    }
+
+}
+
+@media only screen and (min-width: 940px) and (max-width: 1319px) {
+
+    .mn {
+        height: 78vh;
+        width: 70vw;
+    }
+    .chb{
+        height: 30px;   
+        margin-top: 15px;
+        margin-left: 15px;  
+        
+       margin-right: 100%;
+    }
+
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    textarea {
+        width: 200px;
+        margin: 0;
+    }
+   
+.ch {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    flex-direction: row;
+
+}
+.chb{
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.chl {
+    
+    font-size: 20px;
+    font-weight: bolder;
+   
+}
+
+.chi {
+    /* background-color: rgb(184, 235, 255); */
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 0;
+    width: 200px;
+  
+  
+}
+    button {
+        height: 35px;
+        width: 70px;
+        margin-left: 70%;
+    }
+
+    .addr {
+        /* background-color: red; */
+        justify-content: space-between;
+
+    }
+
+    .tar {
+        width: 87%;
+        height: 90px;
+    }
+
+    .chi > textarea {
+        margin-left: 100px;
+        width: 70%;
+    }
+
+
+
+}

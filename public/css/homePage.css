@@ -1,0 +1,660 @@
+/* Reset default padding, margin, and box-sizing for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    /* Ensure the font is applied correctly */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.mn::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.mn {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+body {
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+.slider {
+    height: auto;
+    width: auto;
+}
+
+/* Full viewport height and width background section */
+/* Ensure background picture is fixed and content scrolls */
+.prt {
+    height: 100vh;
+    /* Full viewport height */
+    width: 100%;
+    /* Full width */
+    position: fixed;
+    /* Fix the background */
+    top: 0;
+    /* Align with the top */
+    left: 0;
+    /* Align with the left */
+    background: url('homepage (1).jpg') no-repeat left center,
+        url('homepage (2).jpg') no-repeat center center,
+        url('homepage (3).jpg') no-repeat right center;
+    /* Multiple background images */
+    background-size: 33.33% 100%, 33.33% 100%, 33.33% 100%;
+    /* Background sizing */
+    background-color: rgba(0, 0, 0, 0.678);
+    /* Background color */
+    background-blend-mode: multiply;
+    /* Blend mode */
+    /* filter: blur(16px); */
+    /* Apply blur effect */
+    background-attachment: fixed;
+    /* Fix background */
+    overflow: hidden;
+    /* Prevent scroll on the background */
+}
+
+/* Ensure the content within .mn is scrollable */
+.mn {
+    position: relative;
+    /* Position relative to ensure proper alignment */
+    top: 0;
+    /* Align with the top of the viewport */
+    left: 0;
+    /* Align with the left of the viewport */
+    width: 100%;
+    /* Full width */
+    height: 100vh;
+    /* Full height */
+    overflow-y: auto;
+    /* Enable vertical scroll if needed */
+    z-index: 5;
+    /* Ensure it is above the background */
+    color: white;
+}
+
+
+/* Styling for checkboxes and similar elements */
+.ch {
+    height: 50px;
+    width: 200px;
+    display: grid;
+    grid-template-rows: 1fr;
+    margin: 40px 30px 0 10px;
+}
+
+/* Styling for buttons */
+button {
+    margin-top: 20px;
+    height: 30px;
+    width: 80px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 7px;
+}
+
+button:hover {
+    font-weight: bolder;
+    border: 2px solid rgb(15, 0, 146);
+    color: rgb(4, 1, 192);
+    background-color: rgb(161, 210, 255);
+}
+
+/* Styling for links */
+a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 30px 0 15px 15px;
+    font-weight: bolder;
+    color: rgb(167, 237, 255);
+    transition: 0.6s ease;
+}
+
+a:hover {
+
+    color: rgb(241, 135, 73);
+}
+
+/* Styling for link container */
+.lnk {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    margin: 30px 0 0 0;
+    padding: 0 15px 0 20px;
+}
+
+/* Styling for highlight elements */
+.hl {
+    width: 125px;
+}
+
+/* Label styling */
+label {
+    margin-bottom: 10px;
+}
+.hideHambutton{
+    display: none;
+}
+
+/* .nav styling */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    /* Full width without causing overflow */
+    background-color: rgba(29, 8, 107, 0.438);
+    font-weight: bolder;
+
+    /* Fix the nav bar to the top */
+    position: fixed;
+    /* Fixes the nav bar to the top of the viewport */
+    overflow: hidden;
+    top: 0;
+    /* Ensures the nav bar is positioned at the top */
+    z-index: 10;
+    /* Places the nav bar above other elements */
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(29, 8, 107, 0.63);
+    display: none;
+
+}
+
+
+
+.nav>ul> {
+    width: 100%;
+    background-color: red;
+}
+
+
+.sidebar>ul>li:nth-child(1) {
+    margin-top: 0;
+    padding: 10px;
+
+}
+
+.sidebar>ul>li:nth-child(2) {
+    margin-top: 10px;
+
+}
+
+
+
+
+
+#hambtn {
+    margin-top: 0;
+    height: 25px;
+    width: 25px;
+}
+
+#close {
+    margin-top: 0;
+    height: 25px;
+    width: 25px;
+}
+
+.nav>ul>li>img {
+    margin-left: auto;
+    width: 25px;
+    height: 25px;
+}
+
+
+.sidebar>ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.s_ftr_list>li {
+    margin-top: 80px;
+}
+
+
+.logo {
+    height: 90px;
+    width: 90px;
+}
+
+ul {
+    /* background-color: rgb(247, 168, 112); */
+    display: flex;
+    width: 60vw;
+    list-style: none;
+    margin-top: 0;
+    /* Prevent overlap with the nav */
+}
+
+li {
+    margin-right: 40px;
+
+}
+
+img {
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.mn_Ad {
+    margin-top: 230px;
+    /* Adjust margin to account for fixed nav */
+    width: 100%;
+    /* Full width without causing overflow */
+    height: 300px;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(153, 209, 235);
+    font-weight: bolder;
+}
+
+.mn_pra {
+    margin-top: 30px;
+    width: 98vw;
+    /* Adjusted width to prevent overflow */
+    height: 280px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(153, 209, 235);
+    font-weight: bolder;
+}
+
+.ftr {
+
+    bottom: 0;
+    height: 250px;
+    width: 100%;
+    /* Full width without causing overflow */
+    background-color: rgb(5, 5, 71);
+    /* background-color: red; */
+    display: flex;
+}
+
+.ftr_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    width: 100%;
+}
+
+.ftr_icnz {
+    margin-right: 4px;
+    width: 30px;
+    height: 30px;
+}
+
+.ftr_list>li {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.mlnkz {
+
+    margin: auto;
+    width: 79px;
+    height: 79px;
+}
+
+.md_list {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* background-color: rgb(148, 39, 39); */
+
+
+}
+
+.md_list>li {
+    margin: 23px auto;
+}
+
+.chf {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    width: 32.99%;
+    justify-content: center;
+    align-content: center;
+}
+
+.mlchf {
+    padding: 20px 20px;
+}
+
+/* .soc {
+    background-color: aqua;
+    height: 40px;
+    width: 31vw;
+    font-size: 25px;
+    text-align: center;
+} */
+
+p {
+    text-align: justify;
+
+}
+
+
+
+/* Media Query for devices with width up to 1264px */
+@media (max-width: 1264px) {
+
+    .mn_pra {
+        font-size: 17px;
+    }
+
+    .mn_Ad {
+        font-size: 50px;
+    }
+
+    .ftr {
+        height: auto;
+        /* Allow footer height to adjust automatically */
+        padding: 10px;
+        /* Reduce padding */
+    }
+
+    .ftr_list {
+        width: 100%;
+        /* Increase width to fit content better */
+        margin-left: 10px;
+        /* Reduce left margin */
+    }
+
+
+    .hideHambutton{
+        display: none;
+    }
+
+    .ftr_icnz {
+        width: 15px;
+        /* Reduce icon size */
+        height: 15px;
+        /* Reduce icon size */
+    }
+
+    .chf {
+        font-size: 0.8em;
+
+    }
+
+
+
+    .mlnkz {
+
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Media Query for devices with width up to 1024px */
+@media (max-width: 1024px) {
+
+    .mn_pra {
+        font-size: 15px;
+    }
+
+    .mn_Ad {
+        font-size: 45px;
+    }
+
+    .ftr {
+
+        /* Stacking items vertically */
+        height: auto;
+        /* Adjusting height based on content */
+        padding: 5px;
+        /* Further reducing padding */
+    }
+    .hideHambutton{
+        display: none;
+    }
+
+    .ftr_list {
+        width: 100%;
+        /* Full width for smaller screens */
+        margin-left: 0;
+        /* Remove left margin */
+        margin-bottom: 10px;
+        /* Add bottom margin */
+    }
+
+    .ftr_icnz {
+        width: 20px;
+        /* Further reduce icon size */
+        height: 20px;
+
+        /* Further reduce icon size */
+    }
+}
+
+/* Media Query for devices with width up to 768px */
+@media (max-width: 768px) {
+
+    .mn_pra {
+        font-size: 14px;
+    }
+
+    .mn_Ad {
+        font-size: 35px;
+    }
+
+    .ftr {
+        padding: 5px;
+        /* Consistent padding */
+    }
+
+    .hideHambutton{
+        display: flex;
+    }
+
+    .ftr_list {
+        width: 100%;
+        /* Full width */
+        margin-bottom: 5px;
+        /* Reduce bottom margin */
+    }
+
+    .ftr_icnz {
+        width: 15px;
+        /* Further reduce icon size */
+        height: 15px;
+        /* Further reduce icon size */
+    }
+}
+
+/* Media Query for devices with width up to 480px */
+/* Media Query for devices with width up to 480px */
+/* Global adjustments to prevent horizontal scroll */
+body {
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+
+@media (max-width: 930px) {
+
+    .nav>ul {
+        justify-content: flex-end;
+
+    }
+    .hideHambutton{
+        display:flex;
+    }
+
+
+    .hiddenOnMobile {
+        display: none;
+
+    }
+
+
+}
+
+
+/* Media Query for devices with width up to 480px */
+@media only screen and (max-width: 480px) {
+
+    /* Ensure the footer takes full width on small devices */
+    .ftr {
+        flex-direction: column;
+        width: 100vw;
+        /* Ensure full width */
+        padding: 2px;
+        font-size: 12px;
+        /* Minimum padding */
+        overflow-x: hidden;
+        /* Prevent horizontal scrolling */
+    }
+
+    .mlchf {
+        padding: 0;
+    }
+
+    .hideHambutton{
+        display: flex;
+    }
+
+    .md_list>li {
+
+        margin: auto;
+    }
+
+    /* Hide scrollbars for .mn element while maintaining scroll functionality */
+    .mn {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow-y: auto;
+        /* Enable vertical scroll if needed */
+        overflow-x: hidden;
+        /* Prevent horizontal scrolling */
+        -ms-overflow-style: none;
+        /* Hide scrollbars in IE and Edge */
+        scrollbar-width: none;
+        /* Hide scrollbars in Firefox */
+    }
+
+
+
+    .mn::-webkit-scrollbar {
+        display: none;
+        /* Hide scrollbars in Safari and Chrome */
+    }
+
+
+    .nav>ul>li {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    /* Allow .nav elements to scroll horizontally */
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        overflow-x: auto;
+        /* Allow horizontal scrolling */
+    }
+
+    .nav>ul {
+        width: auto;
+        color: rgb(231, 255, 15);
+        font-size: 12px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 40px;
+
+    }
+
+    .logo>img {
+        width: 30px;
+        height: 30px;
+        margin: 10px auto;
+    }
+
+    ul {
+        display: flex;
+        width: auto;
+        list-style: none;
+        overflow-x: auto;
+        /* Allow horizontal scrolling */
+        margin-top: 0;
+    }
+
+    li {
+        margin-right: 4px;
+    }
+
+    li>a {
+        color: rgb(231, 255, 15);
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    .lnk {
+        width: 50px;
+    }
+
+    .mn_pra {
+        font-size: 12px;
+    }
+
+    .mn_Ad {
+        font-size: 20px;
+    }
+
+    .ftr_list {
+        width: 100vw;
+        /* Full width */
+        margin-bottom: 5px;
+        /* Maintain bottom margin */
+    }
+
+    .ftr_icnz {
+        width: 10px;
+        /* Minimal icon size */
+        height: 10px;
+        /* Minimal icon size */
+    }
+
+
+
+    .hiddenOnMobile {
+        display: none;
+
+    }
+
+}

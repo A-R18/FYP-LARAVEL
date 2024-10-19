@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu';
+
+}
+
+
+
+.prt {
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background: url(admdocPic.jpg), rgba(0, 0, 0, 0.171);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    filter: blur(8px);
+
+
+}
+
+.mn {
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    border: 5px solid rgb(26, 97, 76);
+    color: white;
+    background-color: rgba(7, 20, 20, 0.541);
+    margin: auto;
+    height: 50vh;
+    width: 85vw;
+
+
+}
+.errmn{
+    
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    width: 55vw;
+    height: 40px;
+    background-color: transparent;
+}
+
+
+.npr {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    position: relative; /* Relative to its normal position in the flow */
+    margin-bottom: 20px; /* Add some space below the notification */
+    z-index: 5;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lrt, .dgr {
+    padding: 10px 20px;
+    height: auto;
+    width: fit-content; /* Adjust width to fit content */
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background for visibility */
+    color: white;
+    animation: fadeOut 12s ease-out forwards;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.lrt {
+    background-color: rgba(76, 255, 121, 0.7); /* Adjust success color */
+}
+
+.dgr {
+    background-color: rgba(255, 0, 0, 0.7); /* Adjust error color */
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 15px;
+}
+
+.ch {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+
+
+}
+.btch{
+    display: flex;
+    justify-content: end;
+}
+
+.chl {
+    margin: auto 0px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.chrd {
+    width: 250px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+
+.rdbt {
+    width: 100px;
+    
+    /* background-color: red; */
+}
+
+input {
+    display: block;
+    padding: 8px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(4, 182, 182, 0.39);
+    color: white;
+    font-size: 15px;
+}
+select {
+    display: block;
+    padding: 8px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(4, 182, 182, 0.39);
+    color: white;
+    font-size: 15px;
+}
+option{
+    
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(3, 8, 37, 0.39);
+    color: white;
+    font-size: 15px;
+}
+
+::placeholder {
+    color: rgb(255, 255, 255);
+
+}
+
+
+button {
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 7px;
+
+}
+
+button:hover {
+    margin-top: 20px;
+    font-weight: bolder;
+    border: 2px solid rgb(15, 0, 146);
+    color: rgb(4, 1, 192);
+    background-color: rgb(161, 210, 255);
+}
+
+.rbt {
+    background-color: orange;
+    width: 15px;
+    height: 15px;
+}
+
+.rdch {
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+
+span{
+    margin-top: 3px;
+    font-size: 7pt;
+    font-weight: bold;
+    color: red;
+   
+
+}
+.chi{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 630px) and (max-width: 1366px) {
+
+    .mn {
+        height: 88vh;
+        width: 75vw;
+    }
+
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    textarea {
+        width: 200px;
+    }
+
+    input {
+        width: 300px;
+    }
+    .chrd {
+        width: 300px;
+    }
+
+    .chl {
+        margin: auto 0px;
+    }
+
+    input {
+        height: 40px;
+    }
+
+    button {
+        height: 35px;
+        width: 90px;
+       
+    }
+
+    .addr {
+        /* background-color: red; */
+        justify-content: space-between;
+
+    }
+
+    .tar {
+        width: 80%;
+        height: 90px;
+    }
+
+    textarea {
+        margin: auto;
+        width: 100%;
+    }
+    .extra{
+        display: none;
+    }
+
+
+    .btch{
+        height: 50px;
+        display: flex;
+       justify-content: start;
+  
+
+    }
+
+
+   
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:450px) {
+
+    .mn {
+        height: 85vh;
+        width: 95vw;
+    }
+
+    form {
+        display: block;
+    }
+
+    .chl {
+        margin: auto 0px;
+    }
+
+    input {
+        height: 40px;
+    }
+
+    button {
+        margin: 0px;
+       
+    }
+    button:hover {
+        margin: 0px;
+    }
+
+}

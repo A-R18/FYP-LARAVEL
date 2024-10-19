@@ -1,0 +1,667 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu';
+
+}
+
+
+
+.prt {
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background: url(admdocPic.jpg), rgba(0, 0, 0, 0.171);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    border: 4px solid black;
+    filter: blur(10px);
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 0.8fr 7.7fr;
+    /* Adjust rows to fit .ttb and swapped .npr/.mn */
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    transform: translate(0%, 0%);
+    margin: auto;
+    column-gap: 40px;
+}
+
+.ttb {
+    box-shadow: 4px 4px #c2c2c2;
+    width: 100%;
+    background-color: rgba(48, 2, 61, 0.733);
+    /* border-radius: 20px; */
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-row: 1 / 2;
+}
+
+
+.bthst{
+    
+    width: 80px;
+}
+
+.btnz {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nam {
+    height: 40px;
+    margin: auto 20px;
+    align-content: center;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    width: auto;
+}
+
+
+.mn {
+    position: relative;
+    z-index: 5;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.603);
+    border-radius: 20px;
+    height: 95%;
+    width: 88vw;
+    margin: 0px auto;
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: auto;
+    /* Enable vertical scrolling */
+    grid-row: 3 / 4;
+    /* Swapped position with .npr */
+}
+
+.npr {
+    position: relative;
+    /* Relative to its normal position in the flow */
+   
+    margin-bottom: 20px;
+    /* Adding some space below the notification */
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2 / 3;
+    /* New position */
+}
+
+.lrt, .dgr {
+    padding: 10px 20px;
+    height: auto;
+    width: fit-content;
+    /* Adjust width to fit content */
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darker background for visibility */
+    color: white;
+    animation: fadeOut 12s ease-out forwards;
+    z-index: 1000;
+    /* Ensure it's above other content */
+}
+
+.lrt {
+    background-color: rgba(76, 255, 121, 0.7);
+    /* Adjust success color */
+}
+
+.dgr {
+    background-color: rgba(255, 0, 0, 0.7);
+    /* Adjust error color */
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.btvt {
+    width: 100px;
+}
+
+
+
+.lobt>a:hover {
+    color: white;
+    font-weight: bolder;
+}
+
+
+
+button>a:hover {
+    color: rgb(4, 1, 192);
+    font-weight: bolder;
+}
+
+
+.bthst{
+    margin-right: 15px;
+}
+.bthst>a{
+font-size: 12px;
+}
+
+/* Hide scrollbars but keep scroll functionality */
+.mn::-webkit-scrollbar {
+    width: 0;
+    /* Hide scrollbar for Webkit browsers */
+}
+
+.mn {
+    -ms-overflow-style: none;
+    /* Hide scrollbar for Internet Explorer and Edge */
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+}
+
+.bt2 {
+    width: 70px;
+}
+
+button {
+
+    height: 30px;
+    width: 88px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 7px;
+
+}
+
+button:hover {
+    font-weight: bolder;
+    border: 2px solid rgb(15, 0, 146);
+    color: rgb(4, 1, 192);
+    background-color: rgb(161, 210, 255);
+}
+
+
+p {
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+}
+
+table {
+    border-radius: 18px;
+    overflow: hidden;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.932);
+    width: 70%;
+    margin: 10px auto;
+    border: none;
+    border-collapse: collapse;
+    font-weight: bold;
+
+
+}
+
+
+
+
+
+
+tr {
+
+    height: 40px;
+}
+
+
+td {
+    padding: 0px;
+    text-align: center;
+
+}
+
+th {
+    color: white;
+    height: 50px;
+    background-color: rgb(23, 88, 71);
+    padding: 4px 4px;
+    font-size: large;
+    font-weight: bolder;
+
+}
+
+textarea {
+    border: none;
+    margin: 8px;
+    border-radius: 8px;
+    width: 99%;
+    height: 60px;
+    background-color: rgb(138, 193, 255);
+    font-weight: bold;
+    padding: 10px 0px 0px 10px;
+    font-size: 1.2rem;
+    color: rgb(55, 0, 255);
+
+}
+
+
+textarea::placeholder {
+    padding: 10px 0px 0px 10px;
+    color: rgb(55, 0, 255);
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(17, 11, 11, 0.205);
+}
+
+.tbdy {
+    margin-top: 8vh;
+    overflow: auto;
+}
+
+.prcpt {
+    border-bottom: 2.8px solid rgba(0, 80, 36, 0.63);
+}
+
+.mn::-webkit-scrollbar {
+    height: 0.5rem;
+    width: 0.5rem;
+
+}
+
+
+.mn::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.123);
+    visibility: hidden;
+}
+
+.btcl {
+    width: 70px;
+
+}
+
+
+.lobt:hover {
+    font-weight: bolder;
+    border: 2px solid rgb(253, 90, 90);
+    color: rgb(253, 253, 253);
+    background-color: rgb(228, 0, 0);
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+a:hover {
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+
+.drcred {
+    font-size: 10px;
+    margin-left: 50px;
+    /* background-color: red; */
+    width: 650px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.drdp>img {
+    /* background-color: red; */
+    height: 88px;
+    width: 88px;
+
+
+    border-radius: 150px;
+}
+
+
+
+.prcp {
+    margin: auto;
+    height: 90%;
+    width: 80%;
+    border-radius: 2px solid rgb(163, 157, 157);
+}
+
+
+.btnz>button{
+    margin-right: 30px;
+}
+
+
+.hdr {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.hdr>* {
+    font-size: 20px;
+
+}
+
+
+.hrch {
+    display: flex;
+    justify-content: center;
+    /*For centering horizontally */
+    align-items: center;
+    /* For centering vertically */
+    height: 100%;
+    width: 20%;
+    text-align: center;
+}
+
+
+.title {
+
+    /* justify-content: center; For centering horizontally */
+    /* align-items: center;    For centering vertically */
+    height: 10%;
+    width: 100%;
+
+}
+
+
+.title>p {
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+
+}
+
+
+
+.prln {
+    text-align: justify;
+}
+
+
+.prescription {
+    font-size: 18px;
+    width: 100%;
+    height: 75%;
+    text-align: justify;
+    padding: 10px 20px;
+    text-align: justify;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and   (max-width:450px) {
+
+    .mn > .tbl {
+        border-radius: 20px;
+        width: 99%;
+        margin: 10px auto;
+        border-collapse: separate; /* For  'separate' */
+        border-spacing: 0; /* For removing any gaps between cells */
+        border: none;
+        overflow: hidden; /* Ensure the table respects border-radius */
+        font-size: 0.52em;
+    }
+
+    td > button{
+        width: 0.7em;
+        
+        font-size: 0.9em;
+
+    }
+
+    .btnz>button{
+        margin-right: 10px;
+    }
+    
+
+
+
+    textarea{
+        font-size: 10px;
+        width: 95%;
+    }
+   
+
+   
+
+
+    .ttb {
+        justify-content: space-between;
+        border-radius: 0px;
+        width: 100vw;
+        box-shadow: none;
+        /* left: 1%; */
+        height: 18.79vh;
+    }
+  
+
+     .drcred{
+        margin-left: 20px;
+        width: 185px;
+        height: 80px;
+        display: flex;
+        
+    }   
+
+
+    .nam {
+        text-align: justify;
+        margin: 10px 0px 10px 0px;
+        font-size: 9px;
+        font-weight: bolder;
+        color: white;
+       
+    }
+    
+
+    .mn {
+        margin: 0px auto;
+        height: auto;
+        width: 100vw;
+        padding: 0;
+        border-radius: 0px;
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+    
+
+    .btnz{
+        width: 160px;
+    }
+
+
+    .drdp{
+        height: 40px;
+        width: 40px;
+        margin-right: 60px;
+    }
+
+    .nmspz{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btnz > button {
+        width: 45px;
+        
+        
+    }
+
+
+    button {
+        height: 25px;
+        margin-right: 10px;
+        
+    }
+
+    button > a{
+        font-size: 8px;
+    }
+
+    table, th {
+       
+        font-size: 0.63rem;
+    }
+
+    td >button{
+        margin: auto;
+        width: 40px;
+    }
+   
+
+
+    .btnz > .rsltz{
+
+        width: 60px;
+        font-size: 9px;
+
+    }
+ 
+    p{
+        font-size: 0.89em;
+      
+    }
+    .hrch, .hdr, .title, .prescription, strong{
+        font-size: 0.7em;
+    }
+
+
+
+}
+
+
+
+@media only screen and (min-width:451px)and (max-width:809px) {
+
+    .mn > table {
+        border-radius: 20px;
+        width: 95%;
+        margin: 10px auto;
+        border-collapse: separate; /* Change to 'separate' */
+        border-spacing: 0; /* Remove any gaps between cells */
+        border: none;
+        overflow: hidden; /* Ensure the table respects border-radius */
+    }
+
+    .ttb {
+        justify-content: space-between;
+        border-radius: 0px;
+        width: 100vw;
+        box-shadow: none;
+        /* left: 1%; */
+        height: 18.79vh;
+    }
+  
+
+     .crdntlz{
+        height: 70px;
+        width: 140px;
+        display: flex;
+        flex-direction: column;
+    }   
+
+
+    .nam {
+        margin: auto;
+        text-align: justify;
+        margin: auto 15px;
+        font-weight: bolder;
+        color: white;
+        width: 120px;
+    }
+    
+
+    .mn {
+        padding: 20px;
+        margin: 0px auto;
+        height: auto;
+        width: 100vw;
+        padding: 0;
+        border-radius: 0px;
+        overflow: hidden;
+    }
+
+    .btnz{
+        width: 380px;
+    }
+
+    .btnz > button {
+        width: 65px;
+        
+        
+    }
+
+
+    button {
+        height: 25px;
+        width: 35px;
+        margin-right: 10px;
+    }
+
+    
+    button > a{
+        font-size: 10px;
+    }
+
+    table, th {
+       
+        font-size: 0.69rem;
+    }
+ 
+
+    .btnz > .rsltz{
+
+        width: 60px;
+        font-size: 9px;
+
+    }
+    textarea{
+        width: 95%;
+    }
+    
+
+
+
+}

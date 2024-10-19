@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu';
+
+}
+
+
+
+.mnForm {
+    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    border: 5px solid rgb(128, 255, 217);
+    color: white;
+    background-color: rgba(4, 51, 51, 0.644);
+    width: 330px;
+    min-width: 250px;
+    height: 320px;
+    border-radius: 15px;
+
+}
+
+.ch {
+    height: 50px;
+    width: 200px;
+    display: grid;
+    grid-template-rows: 1fr;
+    margin: 30px 30px 0px 10px;
+
+}
+.chl{
+    margin-top: 20px;
+}
+
+.chbt{
+    margin-top: 60px;
+}
+
+.eml {
+    margin-top: 60px;
+}
+
+
+
+.hl {
+    width: 125px;
+
+}
+
+input {
+    margin-top: 10px;
+    height: 45px;
+    width: 300px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(0, 165, 165, 0.836);
+    color: rgb(255, 255, 255);
+    padding: 0px 5px;
+
+
+
+}
+select {
+    margin-top: 15px;
+    height: 45px;
+    width: 300px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(0, 165, 165, 0.836);
+    color: rgb(255, 255, 255);
+    padding: 0px 5px;
+}
+
+
+::placeholder {
+    color: rgb(255, 255, 255);
+    margin: 0px 0px 4px 4px;
+
+}
+
+label {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+
+
+.npr {
+    position: relative;
+    /* Relative to its normal position in the flow */
+    margin-bottom: 20px;
+    /* Add some space below the notification */
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2 / 3;
+    /* New position */
+}
+
+.bttz {
+    width: 80px;
+}
+
+.lrt,
+.dgr {
+    padding: 10px 20px;
+    height: auto;
+    width: fit-content;
+    /* Adjust width to fit content */
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darker background for visibility */
+    color: white;
+    animation: fadeOut 15s ease-out forwards;
+    z-index: 1000;
+    /* Ensure it's above other content */
+}
+
+.lrt {
+    background-color: rgba(71, 255, 117, 0.877);
+    /* Adjust success color */
+}
+
+.dgr {
+    background-color: rgba(255, 0, 0, 0.733);
+    /* Adjust error color */
+}
+
+.emlbt{
+    width: 90px;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+

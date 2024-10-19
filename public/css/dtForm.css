@@ -1,0 +1,352 @@
+* {
+    padding: 0; /* Remove default padding from all elements */
+    margin: 0; /* Remove default margin from all elements */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    font-family: 'ubuntu'; /* Set the default font to 'ubuntu' for all elements */
+}
+
+.prt {
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    width: 100vw; /* Set the width to 100% of the viewport width */
+    background: url(admdocPic.jpg), rgba(0, 0, 0, 0.171); /* Set the background image with a semi-transparent overlay */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Ensure the background image covers the entire element */
+    background-position: center; /* Center the background image */
+    background-blend-mode: multiply; /* Blend the image with the overlay color */
+    filter: blur(8px); /* Apply a blur effect to the background */
+    background-attachment: fixed; /* Make the background image fixed, so it doesn't scroll with the content */
+}
+
+.mn {
+    position: absolute; /* Position the element absolutely within its closest positioned ancestor */
+    top: 50%; /* Center the element vertically in the viewport */
+    left: 50%; /* Center the element horizontally in the viewport */
+    transform: translate(-50%, -50%); /* Offset the element to perfectly center it */
+    z-index: 5; /* Ensure the element is above other elements with a lower z-index */
+    border: 5px solid rgb(26, 97, 76); /* Add a solid border with a specific color */
+    color: white; /* Set the text color to white */
+    background-color: rgba(7, 20, 20, 0.541); /* Set a semi-transparent background color */
+    margin: auto; /* Center the element horizontally */
+    height: 60vh; /* Set the height to 60% of the viewport height */
+    width: 85vw; /* Set the width to 85% of the viewport width */
+}
+
+form {
+    display: grid; /* Use a grid layout for the form */
+    grid-template-columns: 1fr 1fr 1fr; /* Create three equal-width columns */
+    row-gap: 15px; /* Add a 15px gap between rows */
+}
+
+.ch {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space between child elements */
+    margin: 15px; /* Add a 15px margin around the element */
+}
+
+.btch {
+    display: flex; /* Use flexbox for layout */
+    justify-content: end; /* Align child elements to the end of the flex container */
+}
+
+.chl {
+    margin: auto 0px; /* Vertically center the element */
+    font-size: 20px; /* Set the font size to 20px */
+    font-weight: bolder; /* Make the font weight bolder */
+}
+
+.chrd {
+    width: 250px; /* Set the width of the element to 250px */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space between child elements */
+}
+
+.rdbt {
+    width: 100px; /* Set the width of the element to 100px */
+    /* background-color: red; */ /* Background color commented out */
+}
+
+input {
+    padding: 8px; /* Add padding inside the input element */
+    width: 250px; /* Set the width of the input to 250px */
+    height: 40px; /* Set the height of the input to 40px */
+    border: none; /* Remove the border */
+    border-radius: 4px; /* Round the corners with a 4px radius */
+    background-color: rgba(4, 182, 182, 0.39); /* Set a semi-transparent background color */
+    color: white; /* Set the text color to white */
+    font-size: 15px; /* Set the font size to 15px */
+}
+
+select {
+    padding: 8px; /* Add padding inside the select element */
+    width: 250px; /* Set the width of the select to 250px */
+    height: 40px; /* Set the height of the select to 40px */
+    border: none; /* Remove the border */
+    border-radius: 4px; /* Round the corners with a 4px radius */
+    background-color: rgba(4, 182, 182, 0.39); /* Set a semi-transparent background color */
+    color: white; /* Set the text color to white */
+    font-size: 15px; /* Set the font size to 15px */
+}
+
+option {
+    background-color: rgba(9, 53, 53, 0.39); /* Set a semi-transparent background color */
+    color: white; /* Set the text color to white */
+    font-size: 15px; /* Set the font size to 15px */
+    font-weight: bolder; /* Make the font weight bolder */
+}
+
+::placeholder {
+    color: rgb(255, 255, 255); /* Set the placeholder text color to white */
+}
+
+button {
+    margin-top: 20px; /* Add a 20px margin at the top */
+    height: 30px; /* Set the height of the button to 30px */
+    width: 80px; /* Set the width of the button to 80px */
+    border: none; /* Remove the border */
+    background-color: blue; /* Set the background color to blue */
+    color: white; /* Set the text color to white */
+    border-radius: 7px; /* Round the corners with a 7px radius */
+}
+
+button:hover {
+    margin-top: 20px; /* Maintain the 20px top margin on hover */
+    font-weight: bolder; /* Make the font weight bolder on hover */
+    border: 2px solid rgb(15, 0, 146); /* Add a 2px solid border with a specific color on hover */
+    color: rgb(4, 1, 192); /* Change the text color on hover */
+    background-color: rgb(161, 210, 255); /* Change the background color on hover */
+}
+
+.rbt {
+    background-color: orange; /* Set the background color to orange */
+    width: 15px; /* Set the width to 15px */
+    height: 15px; /* Set the height to 15px */
+}
+
+.rdch {
+    font-size: 20px; /* Set the font size to 20px */
+    font-weight: bolder; /* Make the font weight bolder */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space between child elements */
+}
+
+span {
+    margin-top: 3px; /* Add a 3px margin at the top */
+    font-size: 7pt; /* Set the font size to 7pt */
+    font-weight: bold; /* Make the font weight bold */
+    color: red; /* Set the text color to red */
+}
+
+.chi {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange child elements in a column */
+}
+
+
+
+
+
+@media only screen and (min-width: 220px) and (max-width: 549px) {
+    .mn {
+        
+        margin-top: 60px;
+        height: auto; /* Allow the height to adjust automatically */
+        width: 95vw; /* Set the width to 95% of the viewport width */
+    }
+
+    form {
+        display: block; /* Display the form as a block element */
+    }
+
+    textarea {
+        width: 200px; /* Set the width of the textarea to 200px */
+    }
+
+    .chl {
+        margin: auto 0px; /* Vertically center the element */
+        font-size: 16px; /* Set the font size to 16px */
+    }
+
+    .rdch > label {
+        margin-right: 20px; /* Add a 20px margin to the right */
+        font-size: 0.7em; /* Set the font size to 0.7em */
+    }
+
+    .chrd {
+        width: 200px; /* Set the width to 200px */
+    }
+
+    input {
+        height: 35px; /* Set the height of the input to 35px */
+        width: 200px; /* Set the width of the input to 200px */
+    }
+
+    button {
+        height: 35px; /* Set the height of the button to 35px */
+        width: 90px; /* Set the width of the button to 90px */
+        margin-left: 70%; /* Align the button to the right */
+    }
+
+    select {
+        width: 200px; /* Set the width of the select to 200px */
+        height: 35px; /* Set the height of the select to 35px */
+    }
+
+    .chi {
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Arrange child elements in a column */
+    }
+
+    .chb {
+        margin-top: 15px; /* Add a 15px margin at the top */
+        margin-left: 15px; /* Add a 15px margin to the left */
+        margin-bottom: 15px; /* Add a 15px margin at the bottom */
+        row-gap: 40px; /* Add a 40px gap between rows */
+    }
+
+    .chi > textarea {
+        margin-left: 65px; /* Add a 65px margin to the left */
+        width: 74%; /* Set the width to 74% */
+    }
+}
+
+
+
+@media only screen and (min-width: 550px) and (max-width: 939px) {
+    .mn {
+        height: auto;
+        margin-top: 60px;
+        width: 95vw; /* Set the width to 95% of the viewport width */
+    }
+
+    form {
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    textarea {
+        width: 200px; /* Set the width of the textarea to 200px */
+    }
+
+    .chl {
+        margin: auto 0px; /* Vertically center the element */
+        font-size: 16px; /* Set the font size to 16px */
+    }
+
+    .rdch > label {
+        margin-right: 20px; /* Add a 20px margin to the right */
+        font-size: 0.7em; /* Set the font size to 0.7em */
+    }
+
+    .chrd {
+        width: 200px; /* Set the width to 200px */
+    }
+
+    input {
+        height: 35px; /* Set the height of the input to 35px */
+        width: 200px; /* Set the width of the input to 200px */
+    }
+
+    button {
+        height: 35px; /* Set the height of the button to 35px */
+        width: 90px; /* Set the width of the button to 90px */
+        margin-left: 70%; /* Align the button to the right */
+    }
+
+    select {
+        width: 200px; /* Set the width of the select to 200px */
+        height: 35px; /* Set the height of the select to 35px */
+    }
+
+    .chi {
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Arrange child elements in a column */
+    }
+
+    .chb {
+        margin-top: 15px; /* Add a 15px margin at the top */
+        margin-left: 15px; /* Add a 15px margin to the left */
+        margin-bottom: 15px; /* Add a 15px margin at the bottom */
+        row-gap: 40px; /* Add a 40px gap between rows */
+    }
+
+    .chi > textarea {
+        margin-left: 65px; /* Add a 65px margin to the left */
+        width: 74%; /* Set the width to 74% */
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 940px) and (max-width: 1319px) {
+    .mn {
+        height: 78vh; /* Set the height to 78% of the viewport height */
+        width: 70vw; /* Set the width to 70% of the viewport width */
+    }
+
+    form {
+        grid-template-columns: 1fr 1fr; /* Create two equal-width columns */
+    }
+
+    textarea {
+        width: 200px; /* Set the width of the textarea to 200px */
+        margin: 0; /* Remove the margin */
+    }
+
+    select {
+        width: 200px; /* Set the width of the select to 200px */
+    }
+
+    .chrd {
+        width: 200px; /* Set the width to 200px */
+    }
+
+    .ch {
+        display: flex; /* Use flexbox for layout */
+        justify-content: space-between; /* Distribute space between child elements */
+        margin: 15px; /* Add a 15px margin around the element */
+        flex-direction: row; /* Arrange child elements in a row */
+    }
+
+    .chb {
+        height: 30px; /* Set the height to 30px */
+        margin-top: 15px; /* Add a 15px margin at the top */
+        margin-left: 15px; /* Add a 15px margin to the left */
+    }
+
+    .chl {
+        font-size: 20px; /* Set the font size to 20px */
+        font-weight: bolder; /* Make the font weight bolder */
+    }
+
+    .chi {
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Arrange child elements in a column */
+    }
+
+    input {
+        padding: 0; /* Remove padding inside the input element */
+        width: 200px; /* Set the width of the input to 200px */
+    }
+
+    button {
+        height: 35px; /* Set the height of the button to 35px */
+        width: 70px; /* Set the width of the button to 70px */
+        margin-left: 70%; /* Align the button to the right */
+    }
+
+    .addr {
+        justify-content: space-between; /* Distribute space between child elements */
+    }
+
+    .tar {
+        width: 87%; /* Set the width to 87% */
+        height: 90px; /* Set the height to 90px */
+    }
+
+    .chi > textarea {
+        margin-left: 100px; /* Add a 100px margin to the left */
+        width: 70%; /* Set the width to 70% */
+    }
+}
